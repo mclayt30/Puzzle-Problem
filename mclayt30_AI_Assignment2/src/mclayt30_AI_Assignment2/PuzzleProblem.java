@@ -707,7 +707,7 @@ public class PuzzleProblem {
 			
 				Node currentNode = s.pop();
 				if(reachedGoal(currentNode.matrix) == true) { // If the goal is reached
-					printPath(currentNode);
+					//printPath(currentNode);
 					System.out.println("The goal has been found using Depth First Search");
 					System.out.println("Goal Depth: " + currentNode.level);
 					System.out.println("Nodes visited: " + visited.size());					
@@ -739,7 +739,7 @@ public class PuzzleProblem {
 				Node currentNode = q.poll();
 				
 				if(reachedGoal(currentNode.matrix) == true) { // If the goal state is reached
-					printPath(currentNode);
+					//printPath(currentNode);
 					System.out.println("The goal has been found using Breadth First Search");
 					System.out.println("Goal Depth: " + currentNode.level);
 					System.out.println("Nodes visited: " + visited.size());					
@@ -764,7 +764,7 @@ public class PuzzleProblem {
 				Node currentNode = q.poll();
 				
 				if(reachedGoal(currentNode.matrix) == true) { // If the goal state is reached
-					printPath(currentNode);
+					//printPath(currentNode);
 					System.out.println("The goal has been found using Uniform Cost Search");
 					System.out.println("Goal Depth: " + currentNode.level);
 					System.out.println("Nodes visited: " + visited.size());					
@@ -788,7 +788,7 @@ public class PuzzleProblem {
 		while(q.isEmpty() == false) { // While the Priority Queue is not empty
 				Node currentNode = q.remove();				
 				if(reachedGoal(currentNode.matrix) == true) { // If the goal state is reached
-					printPath(currentNode);
+					//printPath(currentNode);
 					System.out.println("The goal has been found using A* Search");
 					System.out.println("Goal Depth: " + currentNode.level);
 					System.out.println("Nodes visited: " + visited.size());					
